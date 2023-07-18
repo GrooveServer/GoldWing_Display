@@ -53,7 +53,10 @@ void displayOutsideTemperature() {
    Displays the voltage on the OLED display.
 */
 void displayVoltage() {
-  voltage = (analogRead(A1) * 0.0293255);
+  //Resister Values on my bike (R1 = 2.89 R2 = 14.7)
+  // Convert from 0-1023 range to 0-30.43252595V range
+  // (0.029748314 = 30.43252595.0 / 1023)
+  voltage = (analogRead(A1) * 0.029748314);
   display.setCursor(10, 40);
   if (voltage < 10.00){
     display.println(String("VOLT:  ") + String(voltage));
