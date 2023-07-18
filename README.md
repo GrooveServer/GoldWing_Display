@@ -48,7 +48,7 @@ Make sure to refer to the documentation of the libraries used (DHT library, U8g2
 
 ## Author
 
-This code was written by Matthew Neadow on July 11, 2023.
+This code was written by GrooveServer on July 11, 2023.
 
 ## License
 
